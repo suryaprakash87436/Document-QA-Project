@@ -29,6 +29,16 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Live Demo
+
+Try the deployed application here:
+
+[AI Document Q&A Chatbot](https://document-app-project-gg8hfgkhmreamqfbbvsy2d.streamlit.app/)
+
+## GitHub Repository
+
+[View Source Code](https://github.com/suryaprakash87436/Document-QA-Project)
+
 ## Environment Variable
 
 Set your Groq API key as `GROQ_API_KEY` in your environment or Streamlit secrets.
