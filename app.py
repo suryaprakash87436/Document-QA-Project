@@ -3,7 +3,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from langchain_ollama import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from src.rag import build_vector_store, answer_question
 
 load_dotenv()
@@ -66,10 +66,10 @@ if process:
         try:
             with st.spinner("Reading, chunking, embedding, and indexing documents..."):
 
-                # Local Ollama embeddings
-                embeddings = OllamaEmbeddings(
-                    model="nomic-embed-text"
-                )
+                # huggingface embeddings
+                embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 
                 store, names, chunk_count = build_vector_store(
                     uploads,
