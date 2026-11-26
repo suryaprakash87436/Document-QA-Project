@@ -33,7 +33,7 @@ streamlit run app.py
 
 Try the deployed application here:
 
-[AI Document Q&A Chatbot](https://document-app-project-gg8hfgkhmreamqfbbvsy2d.streamlit.app/)
+[AI Document Q&A Chatbot]([(https://document-app-project2.streamlit.app/])
 
 ## GitHub Repository
 
